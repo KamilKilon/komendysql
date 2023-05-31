@@ -1,0 +1,12 @@
+mysql -u root #wlaczenie konsoli bazy danych
+CREATE DATABASE #tworzenie bazy danych
+DROP DATABASE #usuwanie bazy danych
+USE szkola #otwieranie bazy danych
+CREATE TABLE ksiazka (idksiazki INT, imieautora TEXT, nazwiskoautora TEXT, tytul TEXT, cena FLOAT); #tworzenie tabeli 
+SHOW TABLES; #pokazuje wszystkie tabele
+SHOW COLUMNS FROM ksiazka; #pokazuje budowe tabeli
+ALTER TABLE ksiazka ADD wydawnictwo VARCHAR(45); #dodawanie kolumny do istniejacej tabeli
+ALTER TABLE ksiazka ADD liczbaStron INT AFTER tytul # dodanie tabeli w danym miejscu (po wybranej tabeli)
+ALTER TABLE ksiazka ADD PRIMARY KEY(idksiazki) - dodawanie klucza 
+INSET INTO osoba VALUES(NULL,"Abdul","LaBomb");
+
